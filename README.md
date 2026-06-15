@@ -31,20 +31,16 @@ technical_validation/
     plot_subject_ica_components.py   #plot ica components
     plot_topomap.py   # Group PSD and band topographies (baseline vs stimulus)
   behavior/
-    extract_all_subjects_rt.py            # Batch RT extraction from benchmark logs
     plot_rt_excluded_violin.py            # Excluded trials (RT > 5000 ms)
-    plot_rt_session_trend_three_styles.py # RT distributions across sessions
-    plot_left_choice_rate_violin.py       # Side-choice summaries
-    pair_aggregate_ols_from_trial_table.py
-    plot_pair_aggregate_glm_forest.py     # Pair-level acoustic-feature GLM (manuscript Fig. behavior-d)
+    plot_rt_session.py                    # RT distributions across sessions
+    category_attraction.py                # Caculate selecting rate for each category
+    plot_pair_aggregate_glm_forest.py     # Pair-level acoustic-feature GLM
   aad_baseline/
     eegnet_2s_cv5.py                      # EEGNet baseline on 0–2 s stimulation window
-    eegnet_classify_trials_5s_1s_cv5.py   # Mirror- and category-held-out CV extensions
+    Mirror- and category-held-out CV.py   # Mirror- and category-held-out CV extensions
     pair_consistent_splits.py             # Mirror-constrained and subcategory 6-fold split helpers
     plot_bacc_three_strategies_boxplot.py # Three CV schemes (manuscript Fig. signal-g)
 
-docs/
-  validation_notes.md                   # Optional notes on figure reproduction (if present)
 ```
 
 If your clone uses a flat layout, the script names above are the authoritative entry points; reorganizing  
