@@ -43,9 +43,6 @@ technical_validation/
 
 ```
 
-If your clone uses a flat layout, the script names above are the authoritative entry points; reorganizing  
-into these folders is recommended before publication but not required for execution.
-
 ## Data assumptions
 
 ### Zenodo release layout
