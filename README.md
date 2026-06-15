@@ -23,23 +23,13 @@ are stored as 6 s epochs (250 Hz, 128 channels) with dichotic onset at sample in
 
 ```
 preprocessing/
-  preprocess_eeg.py                 # PyPREP, filtering, ICA/ICLabel, 6 s epoch export
-  extract_channel_info.py           # GSN-HydroCel-128 montage helper
-  subject_mff_benchmark_config.py   # Session/MFF/benchmark mapping (edit for local raw data)
-
-release/
-  refresh_labels_rts_from_benchmark.py  # Re-extract orienting labels and RTs from benchmark logs
-  import_ratings_to_saad.py             # Build ratings/*.tsv from post-experiment questionnaire
-  anonymize_saad_dataset.py             # Replace internal IDs with sub-XX for public release
-  audit_saad_dataset.py                 # Check Zenodo folder tree, shapes, and residual identifiers
-  audit_data_records_match.py           # Cross-check manuscript Data Records against on-disk files
+  preprocess_eeg.py                 # preprocessing pipeline
 
 technical_validation/
   signal_quality/
-    export_preproc_violin_for_ngplot.py   # Interpolated-channel and rejected-IC summaries
-    plot_preproc_interp_and_ica_violins.py
-    plot_subject_rejected_ica_components.py
-    plot_topomap_group_delta_and_all.py   # Group PSD and band topographies (baseline vs stimulus)
+    plot_preproc_interp_and_ica_violins.py   # Interpolated-channel and rejected-IC summaries
+    plot_subject_ica_components.py   #plot ica components
+    plot_topomap.py   # Group PSD and band topographies (baseline vs stimulus)
   behavior/
     extract_all_subjects_rt.py            # Batch RT extraction from benchmark logs
     plot_rt_excluded_violin.py            # Excluded trials (RT > 5000 ms)
