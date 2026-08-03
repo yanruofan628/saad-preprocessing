@@ -150,4 +150,6 @@ If you use this code or the SAAD dataset, please cite:
 
 ## License
 
-Add your chosen license here (e.g. MIT) before public release.
+MIT License
+
+Copyright (c) 2026 Yan Ruofan et al.
